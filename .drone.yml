@@ -18,10 +18,10 @@ pipeline:
     commands:
     - npm run test:ci
 
-  test:e2e:
-    image: weboaks/node-karma-protractor-chrome:alpine-root
-    commands:
-    - npm run e2e:ci
+  #test:e2e:
+  #  image: weboaks/node-karma-protractor-chrome:alpine-root
+  #  commands:
+  #  - npm run e2e:ci
 
 notify:mail:
   image: drillster/drone-email
