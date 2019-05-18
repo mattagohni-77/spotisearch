@@ -21,6 +21,7 @@ pipeline:
   test:e2e:
     image: caltha/protractor
     commands:
+    - npm rebuild node-sass
     - npm run e2e:ci
 
 notify:mail:
